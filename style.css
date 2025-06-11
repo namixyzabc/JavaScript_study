@@ -1,0 +1,58 @@
+/* 基本的なリセットと設定 */
+body {
+  font-family: sans-serif; /* 見やすいフォントファミリーを指定 */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+/* ページ全体のコンテナ */
+.container {
+  max-width: 800px;
+  margin: 20px auto; /* 上下20px、左右は自動で中央揃え */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #343a40;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #6c757d;
+}
+
+/* HTMLのbody直下を.containerで囲む必要あり */
