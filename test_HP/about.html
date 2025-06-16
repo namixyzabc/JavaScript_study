@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 文字エンコーディングをUTF-8に設定 -->
+    <meta charset="UTF-8">
+    <!-- レスポンシブデザインのためのビューポート設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ページのタイトル -->
+    <title>会社概要 - 未来テック株式会社</title>
+    <!-- Tailwind CSSのCDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- カスタムJavaScriptファイルを読み込み (defer属性でHTML解析後に実行) -->
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- ヘッダーセクション -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- 会社のロゴまたは名前 -->
+            <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors">未来テック株式会社</a>
+            
+            <!-- ナビゲーションメニュー (デスクトップ) -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium hover:border-b-2 hover:border-blue-500">ホーム</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium border-b-2 border-blue-600" aria-current="page">会社概要</a>
+            </nav>
+
+            <!-- モバイルメニューボタン -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-label="メインメニューを開く" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- モバイルメニュー (非表示がデフォルト) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="index.html" class="block text-gray-600 hover:bg-blue-50 hover:text-blue-600 px-4 py-3 text-sm font-medium hover:border-l-4 hover:border-blue-500">ホーム</a>
+            <a href="about.html" class="block text-gray-600 hover:bg-blue-50 hover:text-blue-600 px-4 py-3 text-sm font-medium border-l-4 border-blue-600" aria-current="page">会社概要</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツセクション -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+        <!-- ページタイトル -->
+        <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">会社概要</h1>
+
+        <!-- 会社情報セクション -->
+        <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl max-w-3xl mx-auto">
+            <!-- 会社概要のテキスト -->
+            <div class="space-y-6 text-gray-700">
+                <p class="text-lg leading-relaxed">
+                    未来テック株式会社は、革新的なテクノロジーと創造的なアイデアを融合させ、お客様のビジネス課題を解決するソリューションを提供しています。
+                </p>
+                <p class="text-lg leading-relaxed">
+                    私たちのミッションは、最先端技術を活用し、持続可能な社会の発展に貢献することです。お客様一人ひとりのニーズに真摯に耳を傾け、最適な価値を提供することをお約束します。
+                </p>
+                <p class="text-lg leading-relaxed">
+                    創業以来、私たちは常に変化を恐れず挑戦を続け、多くのお客様から信頼をいただいてまいりました。これからも、未来を形作るテクノロジー企業として、社会に新たな価値を提供し続けます。
+                </p>
+            </div>
+
+            <!-- Placeholder image for About Us page -->
+            <div class="mt-12 text-center">
+                <img src="https://picsum.photos/seed/aboutus/800/400" alt="チームが協力しているイメージ" class="rounded-lg shadow-lg mx-auto max-w-full h-auto">
+                <p class="text-sm text-gray-500 mt-2">私たちのチーム（イメージ）</p>
+            </div>
+
+            <!-- 会社概要リスト (オプション) -->
+            <div class="mt-10 pt-8 border-t border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">基本情報</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li><strong>会社名:</strong> 未来テック株式会社 (FutureTech Inc.)</li>
+                    <li><strong>設立:</strong> 2024年 (学習用サンプル)</li>
+                    <li><strong>所在地:</strong> 〒XXX-XXXX 東京都未来区創造ビル123 (サンプル住所)</li>
+                    <li><strong>事業内容:</strong> 革新的テクノロジーソリューションの開発、コンサルティング</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッターセクション -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <!-- コピーライト情報 -->
+            <p class="text-sm">&copy; 2024 未来テック株式会社. All rights reserved.</p>
+            <p class="text-xs mt-2">これは学習用のサンプルページです。</p>
+        </div>
+    </footer>
+
+</body>
+</html>

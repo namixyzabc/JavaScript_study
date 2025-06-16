@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 文字エンコーディングをUTF-8に設定 -->
+    <meta charset="UTF-8">
+    <!-- レスポンシブデザインのためのビューポート設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ページのタイトル -->
+    <title>未来テック株式会社 - ホーム</title>
+    <!-- Tailwind CSSのCDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- カスタムJavaScriptファイルを読み込み (defer属性でHTML解析後に実行) -->
+    <script src="script.js" defer></script>
+    <style>
+      /* カスタムスタイルやTailwindのコンポーネントを拡張する場合にここに追加できます */
+      /* 例: .active-nav { color: #your-active-color; font-weight: bold; } */
+      /* 今回はTailwindのクラスを直接使用するため、ここは空のままにします */
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- ヘッダーセクション -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- 会社のロゴまたは名前 -->
+            <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition-colors">未来テック株式会社</a>
+            
+            <!-- ナビゲーションメニュー (デスクトップ) -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium border-b-2 border-blue-600" aria-current="page">ホーム</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium hover:border-b-2 hover:border-blue-500">会社概要</a>
+            </nav>
+
+            <!-- モバイルメニューボタン -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-label="メインメニューを開く" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- モバイルメニュー (非表示がデフォルト) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="index.html" class="block text-gray-600 hover:bg-blue-50 hover:text-blue-600 px-4 py-3 text-sm font-medium border-l-4 border-blue-600" aria-current="page">ホーム</a>
+            <a href="about.html" class="block text-gray-600 hover:bg-blue-50 hover:text-blue-600 px-4 py-3 text-sm font-medium hover:border-l-4 hover:border-blue-500">会社概要</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツセクション -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="bg-blue-600 text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <!-- キャッチフレーズ -->
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-down">未来を創造するテクノロジー</h1>
+                <!-- 簡単な説明文 -->
+                <p class="text-lg md:text-xl mb-8 animate-fade-in-up">革新的なアイデアで、ビジネスの明日を切り拓きます。</p>
+                <!-- コールトゥアクションボタン -->
+                <a href="about.html" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition-colors transform hover:scale-105">もっと詳しく</a>
+            </div>
+        </section>
+
+        <!-- 特徴セクション (オプション) -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">私たちの強み</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- 特徴1 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-blue-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">革新性</h3>
+                        <p class="text-gray-600 text-sm">常に新しい技術を探求します。</p>
+                    </div>
+                    <!-- 特徴2 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                         <div class="text-blue-500 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m0 6H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">信頼性</h3>
+                        <p class="text-gray-600 text-sm">高品質なソリューションを提供します。</p>
+                    </div>
+                    <!-- 特徴3 -->
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-blue-500 mb-4">
+                           <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">サポート</h3>
+                        <p class="text-gray-600 text-sm">お客様の成功を第一に考えます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 画像セクション -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">私たちのビジョンを視覚化</h2>
+                <!-- Placeholder image from picsum.photos -->
+                <img src="https://picsum.photos/seed/homepage/1200/500" alt="未来的な技術のイメージ" class="rounded-lg shadow-xl mx-auto max-w-full h-auto">
+            </div>
+        </section>
+    </main>
+
+    <!-- フッターセクション -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <!-- コピーライト情報 -->
+            <p class="text-sm">&copy; 2024 未来テック株式会社. All rights reserved.</p>
+            <p class="text-xs mt-2">これは学習用のサンプルページです。</p>
+        </div>
+    </footer>
+
+    <!-- Tailwind CSSアニメーション用 (オプション) -->
+    <style>
+        @keyframes fade-in-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-down {
+            animation: fade-in-down 0.8s ease-out forwards;
+        }
+
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out 0.4s forwards; /* 0.4s delay */
+        }
+    </style>
+
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

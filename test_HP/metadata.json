@@ -1,0 +1,5 @@
+{
+  "name": "企業HPサンプル (静的HTML)",
+  "description": "HTML、Tailwind CSS、JavaScriptで構築された、2ページのシンプルな企業ウェブサイトのサンプルです。学習目的で詳細なコメントが含まれています。",
+  "requestFramePermissions": []
+}
