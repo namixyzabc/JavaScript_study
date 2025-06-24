@@ -9,3 +9,14 @@ function findMax(numbers) {
 }
 
 console.log(findMax([3, 7, 2, 9, 1])); // 9
+
+
+
+
+//querySelectorAll(cssSelector) (推奨): CSSセレクタを使って、条件に一致する要素をすべて取得します。戻り値はNodeListという、配列に似たオブジェクトです。
+
+const allParagraphs = document.querySelectorAll('p');
+// NodeListはforEachが使えるので便利
+allParagraphs.forEach(p => {
+  console.log(p);
+});
